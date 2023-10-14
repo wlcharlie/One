@@ -13,6 +13,11 @@
 		CB4101A72ADA826100496B81 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB4101A62ADA826100496B81 /* ContentView.swift */; };
 		CB4101A92ADA826200496B81 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CB4101A82ADA826200496B81 /* Assets.xcassets */; };
 		CB4101AD2ADA826200496B81 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CB4101AC2ADA826200496B81 /* Preview Assets.xcassets */; };
+		CB4101B42ADA8A1C00496B81 /* ItemCloudStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB4101B32ADA8A1C00496B81 /* ItemCloudStore.swift */; };
+		CBEF3B7A2ADA9E8700357E49 /* NameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBEF3B792ADA9E8700357E49 /* NameView.swift */; };
+		CBEF3B7C2ADAA5F400357E49 /* TodoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBEF3B7B2ADAA5F400357E49 /* TodoView.swift */; };
+		CBEF3B802ADAA77900357E49 /* CheckView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBEF3B7F2ADAA77900357E49 /* CheckView.swift */; };
+		CBEF3B842ADAA92400357E49 /* Overview.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBEF3B832ADAA92400357E49 /* Overview.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +29,11 @@
 		CB4101A82ADA826200496B81 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CB4101AA2ADA826200496B81 /* One.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = One.entitlements; sourceTree = "<group>"; };
 		CB4101AC2ADA826200496B81 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		CB4101B32ADA8A1C00496B81 /* ItemCloudStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemCloudStore.swift; sourceTree = "<group>"; };
+		CBEF3B792ADA9E8700357E49 /* NameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NameView.swift; sourceTree = "<group>"; };
+		CBEF3B7B2ADAA5F400357E49 /* TodoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoView.swift; sourceTree = "<group>"; };
+		CBEF3B7F2ADAA77900357E49 /* CheckView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckView.swift; sourceTree = "<group>"; };
+		CBEF3B832ADAA92400357E49 /* Overview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Overview.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,9 +66,9 @@
 		CB41019E2ADA826100496B81 /* One */ = {
 			isa = PBXGroup;
 			children = (
+				CBEF3B782ADA9E7D00357E49 /* View */,
+				CBEF3B772ADA9E3300357E49 /* TestFile */,
 				CB41019F2ADA826100496B81 /* OneApp.swift */,
-				CB4101A12ADA826100496B81 /* Persistence.swift */,
-				CB4101A62ADA826100496B81 /* ContentView.swift */,
 				CB4101A82ADA826200496B81 /* Assets.xcassets */,
 				CB4101AA2ADA826200496B81 /* One.entitlements */,
 				CB4101A32ADA826100496B81 /* One.xcdatamodeld */,
@@ -73,6 +83,27 @@
 				CB4101AC2ADA826200496B81 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		CBEF3B772ADA9E3300357E49 /* TestFile */ = {
+			isa = PBXGroup;
+			children = (
+				CB4101A12ADA826100496B81 /* Persistence.swift */,
+				CB4101A62ADA826100496B81 /* ContentView.swift */,
+				CB4101B32ADA8A1C00496B81 /* ItemCloudStore.swift */,
+			);
+			path = TestFile;
+			sourceTree = "<group>";
+		};
+		CBEF3B782ADA9E7D00357E49 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CBEF3B792ADA9E8700357E49 /* NameView.swift */,
+				CBEF3B7B2ADAA5F400357E49 /* TodoView.swift */,
+				CBEF3B7F2ADAA77900357E49 /* CheckView.swift */,
+				CBEF3B832ADAA92400357E49 /* Overview.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -146,9 +177,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				CB4101A02ADA826100496B81 /* OneApp.swift in Sources */,
+				CBEF3B7A2ADA9E8700357E49 /* NameView.swift in Sources */,
+				CBEF3B7C2ADAA5F400357E49 /* TodoView.swift in Sources */,
+				CBEF3B842ADAA92400357E49 /* Overview.swift in Sources */,
+				CBEF3B802ADAA77900357E49 /* CheckView.swift in Sources */,
 				CB4101A52ADA826100496B81 /* One.xcdatamodeld in Sources */,
 				CB4101A72ADA826100496B81 /* ContentView.swift in Sources */,
 				CB4101A22ADA826100496B81 /* Persistence.swift in Sources */,
+				CB4101B42ADA8A1C00496B81 /* ItemCloudStore.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -270,6 +306,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = One/One.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"One/Preview Content\"";
@@ -292,8 +329,9 @@
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 13.0;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = wlchalire.One;
+				PRODUCT_BUNDLE_IDENTIFIER = wlcharlie.One;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = auto;
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -308,6 +346,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = One/One.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"One/Preview Content\"";
@@ -330,8 +369,9 @@
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 13.0;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = wlchalire.One;
+				PRODUCT_BUNDLE_IDENTIFIER = wlcharlie.One;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = auto;
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
 				SWIFT_EMIT_LOC_STRINGS = YES;
