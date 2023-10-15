@@ -12,9 +12,13 @@ struct NameView: View {
 
     var body: some View {
       ZStack {
-        Image("background-night")
+        Image("background-cat2")
           .resizable()
           .scaledToFill()
+          .frame(minWidth: 384, minHeight: 880)
+          .offset(x: 0, y: -380)
+          .scaledToFill()
+          .scaleEffect(0.65)
           .edgesIgnoringSafeArea(.all)
         
         Rectangle()
@@ -22,8 +26,8 @@ struct NameView: View {
           .background(
             LinearGradient(
               stops: [
-                Gradient.Stop(color: Color(red: 0.17, green: 0.17, blue: 0.17), location: 0.00),
-                Gradient.Stop(color: Color(red: 0.71, green: 0.37, blue: 0.37).opacity(0), location: 1.00),
+                Gradient.Stop(color: Color(red: 0, green: 0.15, blue: 0.28).opacity(0.9), location: 0.00),
+                Gradient.Stop(color: Color(red: 0.25, green: 0.57, blue: 0.87).opacity(0), location: 1.00),
               ],
               startPoint: UnitPoint(x: 0.5, y: 0),
               endPoint: UnitPoint(x: 0.5, y: 1)
