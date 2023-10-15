@@ -18,6 +18,8 @@
 		CBEF3B7C2ADAA5F400357E49 /* TodoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBEF3B7B2ADAA5F400357E49 /* TodoView.swift */; };
 		CBEF3B802ADAA77900357E49 /* CheckView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBEF3B7F2ADAA77900357E49 /* CheckView.swift */; };
 		CBEF3B842ADAA92400357E49 /* Overview.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBEF3B832ADAA92400357E49 /* Overview.swift */; };
+		CBEF3B8E2ADB960C00357E49 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBEF3B8D2ADB960C00357E49 /* User.swift */; };
+		CBEF3B902ADBE68A00357E49 /* ControllerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBEF3B8F2ADBE68A00357E49 /* ControllerView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +36,8 @@
 		CBEF3B7B2ADAA5F400357E49 /* TodoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoView.swift; sourceTree = "<group>"; };
 		CBEF3B7F2ADAA77900357E49 /* CheckView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckView.swift; sourceTree = "<group>"; };
 		CBEF3B832ADAA92400357E49 /* Overview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Overview.swift; sourceTree = "<group>"; };
+		CBEF3B8D2ADB960C00357E49 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		CBEF3B8F2ADBE68A00357E49 /* ControllerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControllerView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +70,7 @@
 		CB41019E2ADA826100496B81 /* One */ = {
 			isa = PBXGroup;
 			children = (
+				CBEF3B8C2ADB95FF00357E49 /* Model */,
 				CBEF3B782ADA9E7D00357E49 /* View */,
 				CBEF3B772ADA9E3300357E49 /* TestFile */,
 				CB41019F2ADA826100496B81 /* OneApp.swift */,
@@ -102,8 +107,17 @@
 				CBEF3B7B2ADAA5F400357E49 /* TodoView.swift */,
 				CBEF3B7F2ADAA77900357E49 /* CheckView.swift */,
 				CBEF3B832ADAA92400357E49 /* Overview.swift */,
+				CBEF3B8F2ADBE68A00357E49 /* ControllerView.swift */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		CBEF3B8C2ADB95FF00357E49 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				CBEF3B8D2ADB960C00357E49 /* User.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -184,6 +198,8 @@
 				CB4101A52ADA826100496B81 /* One.xcdatamodeld in Sources */,
 				CB4101A72ADA826100496B81 /* ContentView.swift in Sources */,
 				CB4101A22ADA826100496B81 /* Persistence.swift in Sources */,
+				CBEF3B8E2ADB960C00357E49 /* User.swift in Sources */,
+				CBEF3B902ADBE68A00357E49 /* ControllerView.swift in Sources */,
 				CB4101B42ADA8A1C00496B81 /* ItemCloudStore.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

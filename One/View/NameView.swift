@@ -8,9 +8,8 @@
 import SwiftUI
 
 struct NameView: View {
-  @State var username = ""
-  
-  
+  @EnvironmentObject var user: User
+
     var body: some View {
       ZStack {
         Image("background-night")
@@ -46,7 +45,7 @@ struct NameView: View {
             Text("我是......").font(.system(size: 32))
             Spacer()
             VStack {
-              TextField("", text: $username)
+              TextField("", text: $user.name)
                 .padding(.bottom, 8)
               Rectangle()
                 .frame(height: 1)
@@ -54,7 +53,9 @@ struct NameView: View {
             }
             .frame(width: 260)
             Spacer()
-            Button(action: {}) {
+            Button(action: {
+              user.updateUsername()
+            }) {
               Rectangle()
                 .foregroundColor(.clear)
                 .frame(width: 276, height: 81)
@@ -76,6 +77,7 @@ struct NameView: View {
 
 struct NameView_Previews: PreviewProvider {
     static var previews: some View {
-        NameView()
+      @ObservedObject var user = User()
+      NameView().environmentObject(user)
     }
 }

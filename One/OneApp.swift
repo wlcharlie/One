@@ -12,7 +12,7 @@ struct OneApp: App {
 
     var body: some Scene {
         WindowGroup {
-           NameView()
+           ControllerView()
         }
     }
 }

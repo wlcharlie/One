@@ -14,7 +14,7 @@ struct Overview: View {
         .resizable()
         .scaledToFill()
         .frame(minWidth: 384, minHeight: 880)
-        .offset(x: 0, y: -400)
+        .offset(x: 0, y: -380)
         .scaledToFill()
         .scaleEffect(0.65)
         .edgesIgnoringSafeArea(.all)
