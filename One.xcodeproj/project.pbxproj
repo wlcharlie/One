@@ -23,7 +23,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		CB41019C2ADA826100496B81 /* One.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = One.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CB41019C2ADA826100496B81 /* One - See One, Do One, & Done.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "One - See One, Do One, & Done.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB41019F2ADA826100496B81 /* OneApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OneApp.swift; sourceTree = "<group>"; };
 		CB4101A12ADA826100496B81 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
 		CB4101A42ADA826100496B81 /* One.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = One.xcdatamodel; sourceTree = "<group>"; };
@@ -38,6 +38,7 @@
 		CBEF3B832ADAA92400357E49 /* Overview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Overview.swift; sourceTree = "<group>"; };
 		CBEF3B8D2ADB960C00357E49 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		CBEF3B8F2ADBE68A00357E49 /* ControllerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControllerView.swift; sourceTree = "<group>"; };
+		CBEF3B912ADC0D8A00357E49 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,7 +63,7 @@
 		CB41019D2ADA826100496B81 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				CB41019C2ADA826100496B81 /* One.app */,
+				CB41019C2ADA826100496B81 /* One - See One, Do One, & Done.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -70,6 +71,7 @@
 		CB41019E2ADA826100496B81 /* One */ = {
 			isa = PBXGroup;
 			children = (
+				CBEF3B912ADC0D8A00357E49 /* Info.plist */,
 				CBEF3B8C2ADB95FF00357E49 /* Model */,
 				CBEF3B782ADA9E7D00357E49 /* View */,
 				CBEF3B772ADA9E3300357E49 /* TestFile */,
@@ -137,7 +139,7 @@
 			);
 			name = One;
 			productName = One;
-			productReference = CB41019C2ADA826100496B81 /* One.app */;
+			productReference = CB41019C2ADA826100496B81 /* One - See One, Do One, & Done.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -330,6 +332,9 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = One/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "One - See One, Do One, & Done";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.productivity";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -346,7 +351,7 @@
 				MACOSX_DEPLOYMENT_TARGET = 13.0;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = wlcharlie.One;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "One - See One, Do One, & Done";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = auto;
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
@@ -370,6 +375,9 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = One/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "One - See One, Do One, & Done";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.productivity";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -386,7 +394,7 @@
 				MACOSX_DEPLOYMENT_TARGET = 13.0;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = wlcharlie.One;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "One - See One, Do One, & Done";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = auto;
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
