@@ -14,12 +14,16 @@
 		CB4101A92ADA826200496B81 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CB4101A82ADA826200496B81 /* Assets.xcassets */; };
 		CB4101AD2ADA826200496B81 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CB4101AC2ADA826200496B81 /* Preview Assets.xcassets */; };
 		CB4101B42ADA8A1C00496B81 /* ItemCloudStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB4101B32ADA8A1C00496B81 /* ItemCloudStore.swift */; };
+		CB51693C2ADEBFA3004344FD /* Todo.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB51693B2ADEBFA3004344FD /* Todo.swift */; };
+		CB51693E2ADEC056004344FD /* Record.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB51693D2ADEC056004344FD /* Record.swift */; };
 		CBEF3B7A2ADA9E8700357E49 /* NameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBEF3B792ADA9E8700357E49 /* NameView.swift */; };
 		CBEF3B7C2ADAA5F400357E49 /* TodoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBEF3B7B2ADAA5F400357E49 /* TodoView.swift */; };
 		CBEF3B802ADAA77900357E49 /* CheckView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBEF3B7F2ADAA77900357E49 /* CheckView.swift */; };
 		CBEF3B842ADAA92400357E49 /* Overview.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBEF3B832ADAA92400357E49 /* Overview.swift */; };
 		CBEF3B8E2ADB960C00357E49 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBEF3B8D2ADB960C00357E49 /* User.swift */; };
 		CBEF3B902ADBE68A00357E49 /* ControllerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBEF3B8F2ADBE68A00357E49 /* ControllerView.swift */; };
+		CBF10AAB2ADD60D0002867A7 /* CommonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBF10AAA2ADD60D0002867A7 /* CommonView.swift */; };
+		CBF10AAD2ADD77E3002867A7 /* ActionButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBF10AAC2ADD77E3002867A7 /* ActionButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +36,8 @@
 		CB4101AA2ADA826200496B81 /* One.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = One.entitlements; sourceTree = "<group>"; };
 		CB4101AC2ADA826200496B81 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		CB4101B32ADA8A1C00496B81 /* ItemCloudStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemCloudStore.swift; sourceTree = "<group>"; };
+		CB51693B2ADEBFA3004344FD /* Todo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Todo.swift; sourceTree = "<group>"; };
+		CB51693D2ADEC056004344FD /* Record.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Record.swift; sourceTree = "<group>"; };
 		CBEF3B792ADA9E8700357E49 /* NameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NameView.swift; sourceTree = "<group>"; };
 		CBEF3B7B2ADAA5F400357E49 /* TodoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoView.swift; sourceTree = "<group>"; };
 		CBEF3B7F2ADAA77900357E49 /* CheckView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckView.swift; sourceTree = "<group>"; };
@@ -39,6 +45,8 @@
 		CBEF3B8D2ADB960C00357E49 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		CBEF3B8F2ADBE68A00357E49 /* ControllerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControllerView.swift; sourceTree = "<group>"; };
 		CBEF3B912ADC0D8A00357E49 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		CBF10AAA2ADD60D0002867A7 /* CommonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonView.swift; sourceTree = "<group>"; };
+		CBF10AAC2ADD77E3002867A7 /* ActionButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +79,7 @@
 		CB41019E2ADA826100496B81 /* One */ = {
 			isa = PBXGroup;
 			children = (
+				CBF10AA92ADD60B5002867A7 /* Component */,
 				CBEF3B912ADC0D8A00357E49 /* Info.plist */,
 				CBEF3B8C2ADB95FF00357E49 /* Model */,
 				CBEF3B782ADA9E7D00357E49 /* View */,
@@ -118,8 +127,19 @@
 			isa = PBXGroup;
 			children = (
 				CBEF3B8D2ADB960C00357E49 /* User.swift */,
+				CB51693B2ADEBFA3004344FD /* Todo.swift */,
+				CB51693D2ADEC056004344FD /* Record.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		CBF10AA92ADD60B5002867A7 /* Component */ = {
+			isa = PBXGroup;
+			children = (
+				CBF10AAA2ADD60D0002867A7 /* CommonView.swift */,
+				CBF10AAC2ADD77E3002867A7 /* ActionButton.swift */,
+			);
+			path = Component;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -194,15 +214,19 @@
 			files = (
 				CB4101A02ADA826100496B81 /* OneApp.swift in Sources */,
 				CBEF3B7A2ADA9E8700357E49 /* NameView.swift in Sources */,
+				CB51693E2ADEC056004344FD /* Record.swift in Sources */,
+				CBF10AAD2ADD77E3002867A7 /* ActionButton.swift in Sources */,
 				CBEF3B7C2ADAA5F400357E49 /* TodoView.swift in Sources */,
 				CBEF3B842ADAA92400357E49 /* Overview.swift in Sources */,
 				CBEF3B802ADAA77900357E49 /* CheckView.swift in Sources */,
 				CB4101A52ADA826100496B81 /* One.xcdatamodeld in Sources */,
+				CB51693C2ADEBFA3004344FD /* Todo.swift in Sources */,
 				CB4101A72ADA826100496B81 /* ContentView.swift in Sources */,
 				CB4101A22ADA826100496B81 /* Persistence.swift in Sources */,
 				CBEF3B8E2ADB960C00357E49 /* User.swift in Sources */,
 				CBEF3B902ADBE68A00357E49 /* ControllerView.swift in Sources */,
 				CB4101B42ADA8A1C00496B81 /* ItemCloudStore.swift in Sources */,
+				CBF10AAB2ADD60D0002867A7 /* CommonView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

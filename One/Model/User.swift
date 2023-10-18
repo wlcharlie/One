@@ -9,10 +9,11 @@ import Foundation
 import CloudKit
 
 class User: ObservableObject {
-  var userRecord: CKRecord? = nil
+  @Published var userRecord: CKRecord? = nil
   @Published var name: String = ""
+
   
-  init() {
+  init(onInitSuccess: @escaping () -> Void) {
     let container = CKContainer.default()
     
     container.fetchUserRecordID { (recordID, error) in
@@ -23,11 +24,14 @@ class User: ObservableObject {
         print("User record ID: \(recordID.recordName)")
         
         // find user in publicConatiner - Users
+        
         self.findMe(recordID) { name in
           if name != "" {
             self.name = name
+            onInitSuccess()
             print("User name: \(self.name)")
           } else {
+            onInitSuccess()
             print("New User or User without name")
           }
         }
@@ -38,6 +42,7 @@ class User: ObservableObject {
   private func findMe(_ recordID: CKRecord.ID, completion: @escaping (String) -> Void) {
     let cloudContainer = CKContainer.default()
     let publicDatabase = cloudContainer.publicCloudDatabase
+    
     
     publicDatabase.fetch(withRecordID: recordID) { (result, error) -> Void in
       if let record = result {
@@ -59,8 +64,8 @@ class User: ObservableObject {
     }
   }
   
-  public func updateUsername() {
-    let newName = self.name
+  public func updateUsername(newUsername: String) {
+    let newName = newUsername
     // len > 0
     guard newName.count > 0 else {
       print("New username length should larger than 0")
@@ -80,6 +85,7 @@ class User: ObservableObject {
       if error != nil {
         print("Save username error: \(error.debugDescription)")
       } else {
+        self.name = newUsername
         print("Save username success!")
       }
     }

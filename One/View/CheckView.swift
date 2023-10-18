@@ -8,46 +8,58 @@
 import SwiftUI
 
 struct CheckView: View {
+  @EnvironmentObject var todo: Todo
+  
   var body: some View {
-    ZStack {
-      Image("background-hill")
-        .resizable()
-        .scaledToFill()
-        .frame(minWidth: 384, minHeight: 880)
-        .offset(x: 100, y: 0)
-        .scaledToFill()
-        .edgesIgnoringSafeArea(.all)
-      
-      
-      VStack {
-        Spacer()
-        VStack {
-          Spacer()
-          Spacer()
-          Text("Todo Name").font(.system(size: 32))
-          Spacer()
-          Button(action: {}) {
-            Circle()
-              .foregroundColor(Color(red: 0, green: 0.58, blue: 0.73))
-              .frame(width: 80, height: 80)
-              .overlay(
-                Image(systemName: "checkmark")
-                  .foregroundColor(.white)
-                  .font(.system(size: 32))
+    CommonView (
+      imageContent:
+        ZStack {
+          Image("background-hill")
+            .resizable()
+            .scaledToFill()
+            .offset(x: 0, y: 20)
+            .edgesIgnoringSafeArea(.all)
+          Rectangle()
+            .foregroundColor(.clear)
+            .background(
+              LinearGradient(
+                stops: [
+                  Gradient.Stop(color: Color(red: 0, green: 0.15, blue: 0.28).opacity(0.9), location: 0.00),
+                  Gradient.Stop(color: Color(red: 0.25, green: 0.57, blue: 0.87).opacity(0), location: 1.00),
+                ],
+                startPoint: UnitPoint(x: 0.5, y: 0),
+                endPoint: UnitPoint(x: 0.5, y: 1)
               )
-          }
-          Spacer()
+            )
+            .edgesIgnoringSafeArea(.all)
         }
-        .frame(maxWidth: .infinity, maxHeight: UIScreen.main.bounds.height / 2)
-        .background(Color(red: 0.98, green: 0.96, blue: 0.93))
-        .cornerRadius(50)
+      
+      ,
+      foreImageContent: EmptyView(),
+      panelContent: VStack {
+        Spacer()
+        Spacer()
+        Text(todo.title).font(.system(size: 32)).frame(height: 60)
+        Spacer()
+        Button(action: {}) {
+          Circle()
+            .foregroundColor(Color(red: 0, green: 0.58, blue: 0.73))
+            .frame(width: 80, height: 80)
+            .overlay(
+              Image(systemName: "checkmark")
+                .foregroundColor(.white)
+                .font(.system(size: 32))
+            )
+        }
+        Spacer()
       }
-    }
+    )
   }
 }
 
 struct CheckView_Previews: PreviewProvider {
     static var previews: some View {
-        CheckView()
+      @ObservedObject var todo = Todo(userRecord: nil)
+      CheckView().environmentObject(todo)
     }
 }
