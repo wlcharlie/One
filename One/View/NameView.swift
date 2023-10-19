@@ -43,10 +43,12 @@ struct NameView: View {
         panelContent: VStack {
           Spacer()
           Text("我是......").font(.system(size: 32)).frame(height: 60)
+            .foregroundColor(.black)
           Spacer()
           VStack {
             TextField("", text: $username)
               .padding(.bottom, 8)
+              .foregroundColor(.black)
             Rectangle()
               .frame(height: 1)
               .foregroundColor(Color("dark"))
