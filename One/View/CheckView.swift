@@ -40,6 +40,7 @@ struct CheckView: View {
         Spacer()
         Spacer()
         Text(todo.title).font(.system(size: 32)).frame(height: 60)
+          .foregroundColor(.black)
         Spacer()
         Button(action: {}) {
           Circle()

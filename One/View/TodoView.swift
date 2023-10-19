@@ -32,12 +32,15 @@ struct TodoView: View {
         Spacer()
         VStack {
           Text("現在想要完成什麼事情嗎").font(.system(size: 24))
+            .foregroundColor(.black)
           Text("例如, 運動 寫 code").font(.system(size: 24))
+            .foregroundColor(.black)
         }.frame(height: 60)
         Spacer()
         VStack {
           TextField("", text: $title)
             .padding(.bottom, 8)
+            .foregroundColor(.black)
           Rectangle()
             .frame(height: 1)
             .foregroundColor(Color("dark"))

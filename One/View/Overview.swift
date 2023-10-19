@@ -25,11 +25,11 @@ struct Overview: View {
         VStack {
           Spacer()
           VStack(spacing: 5) {
-            Text("2023/10/04").font(.system(size: 20))
-            Text("完成了第一次").font(.system(size: 20))
+            Text("2023/10/04").font(.system(size: 20)).foregroundColor(.black)
+            Text("完成了第一次").font(.system(size: 20)).foregroundColor(.black)
           }
           Spacer()
-          Text("Todo Name").font(.system(size: 32))
+          Text("Todo Name").font(.system(size: 32)).foregroundColor(.black)
           Spacer()
           VStack(spacing: 15){
 
