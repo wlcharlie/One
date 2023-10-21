@@ -20,7 +20,12 @@ struct ControllerView: View {
     })
     self.user = _user
     group.wait()
-    self.todo = Todo(userRecord: _user.userRecord)
+    group.enter()
+    self.todo = Todo(userRecord: _user.userRecord,onInitSuccess: {
+      print("Todo init")
+      group.leave()
+    })
+    group.wait()
     group.notify(queue: .main){
       print("done")
     }
@@ -31,8 +36,12 @@ struct ControllerView: View {
       return AnyView(NameView())
     } else if todo.title == "" {
       return AnyView(TodoView())
-    } else {
+    } else if todo.todoChecks.count == 0 || todo.continueFlag {
       return AnyView(CheckView())
+    } else if todo.todoChecks.count > 0 {
+      return AnyView(Overview())
+    } else {
+      return AnyView(ErrorView())
     }
   }
   
@@ -43,8 +52,6 @@ struct ControllerView: View {
       .environmentObject(user)
       .environmentObject(todo)
   }
-  
-
 }
 
 struct ControllerView_Previews: PreviewProvider {

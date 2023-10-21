@@ -39,10 +39,13 @@ struct CheckView: View {
       panelContent: VStack {
         Spacer()
         Spacer()
+        Text("\($todo.todoChecks.count)")
         Text(todo.title).font(.system(size: 32)).frame(height: 60)
           .foregroundColor(.black)
         Spacer()
-        Button(action: {}) {
+        Button(action: {
+          todo.createTodoCheck()
+        }) {
           Circle()
             .foregroundColor(Color(red: 0, green: 0.58, blue: 0.73))
             .frame(width: 80, height: 80)
@@ -60,7 +63,7 @@ struct CheckView: View {
 
 struct CheckView_Previews: PreviewProvider {
     static var previews: some View {
-      @ObservedObject var todo = Todo(userRecord: nil)
+      @ObservedObject var todo = Todo(userRecord: nil, onInitSuccess: {})
       CheckView().environmentObject(todo)
     }
 }
