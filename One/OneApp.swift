@@ -9,7 +9,7 @@ import SwiftUI
 
 @main
 struct OneApp: App {
-
+    // adding some comment just for testing the ci :D
     var body: some Scene {
         WindowGroup {
            ControllerView()
