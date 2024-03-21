@@ -53,7 +53,9 @@ struct Overview: View {
         Spacer()
         VStack(spacing: 4) {
           Text(lastTodoCheck.time)
+            .foregroundColor(.black)
           Text("完成了第\(todo.todoChecks.count)次")
+            .foregroundColor(.black)
           Spacer()
           Spacer()
           Text(lastTodoCheck.title)
