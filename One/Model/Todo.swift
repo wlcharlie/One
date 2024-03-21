@@ -28,13 +28,16 @@ class Todo: ObservableObject {
     Task {
       do {
         let todoRecord = try await getTodo().value
-        self.todoRecord = todoRecord!
-        self.title = todoRecord!.object(forKey: "title") as! String
-        if let endAt = todoRecord!.object(forKey: "endAt") as? Date {
-          self.endAt = endAt
+        if let todoRecord {
+          self.todoRecord = todoRecord
+          self.title = todoRecord.object(forKey: "title") as! String
+          if let endAt = todoRecord.object(forKey: "endAt") as? Date {
+            self.endAt = endAt
+          }
+          let todoChecks = try await getTodoCheck().value
+          self.todoChecks = todoChecks
         }
-        let todoChecks = try await getTodoCheck().value
-        self.todoChecks = todoChecks
+
         onInitSuccess()
       } catch let err as ErrorMsg {
         print("\(err.msg)")
