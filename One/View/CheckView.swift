@@ -39,7 +39,7 @@ struct CheckView: View {
       panelContent: VStack {
         Spacer()
         Spacer()
-        Text("\($todo.todoChecks.count)")
+//        Text("\($todo.todoChecks.count)")
         Text(todo.title).font(.system(size: 32)).frame(height: 60)
           .foregroundColor(.black)
         Spacer()
